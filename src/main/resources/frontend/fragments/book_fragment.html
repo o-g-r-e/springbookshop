@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div class="Card" th:fragment="bookFragment(book)">
+        <div class="Card-picture">
+            <a href="#a" th:href="${'/books/' + book.slug}">
+                <img src="/assets/img/content/main/card.jpg" th:src="${book.image}" alt="card.jpg"/>
+            </a>
+            <div class="Card-sale" th:if="${book.discount} != 0" th:text="${book.discount}+'% discount'"></div>
+            <div class="Card-ribbon" th:if="${book.isBestSeller} != 0"><span class="Card-ribbonText">Bestseller</span></div>
+        </div>
+        <div class="Card-content">
+            <strong class="Card-title">
+                <a href="#" th:href="${'/books/' + book.slug}" th:text="${book.title}"></a>
+            </strong>
+            <div class="Card-description" th:text="${book.description}"></div>
+
+            <th:block th:switch="${book.discount}">
+
+                <div class="Card-cost" th:case="0">
+                    <span class="Card-price" th:text="'$'+(${book.price} / 100)"></span>
+                </div>
+
+                <div class="Card-cost" th:case="*">
+                    <span class="Card-priceOld" th:text="'$'+(${book.price} / 100)"></span>
+                    <span class="Card-price" th:text="${'$' + #numbers.formatDecimal((book.price * ((100.0 - book.discount) / 100.0)) / 100.0, 1, 2)}"></span>
+                </div>
+
+            </th:block>
+        </div>
+    </div>
+</body>
+</html>

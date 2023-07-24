@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="changeset_author" id="insert-authors">
+        <insert tableName="authors">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Abigail Adams"/>
+            <column name="photo"/>
+            <column name="slug"/>
+            <column name="description"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Conrad Beissel"/>
+            <column name="photo"/>
+            <column name="slug"/>
+            <column name="description"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="William Byrd"/>
+            <column name="photo"/>
+            <column name="slug"/>
+            <column name="description"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Jonathan Carver"/>
+            <column name="photo"/>
+            <column name="slug"/>
+            <column name="description"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="Timothy Dwight"/>
+            <column name="photo"/>
+            <column name="slug"/>
+            <column name="description"/>
+        </insert>
+    </changeSet>
+    <changeSet author="changeset_author" id="insert-books">
+        <insert tableName="books">
+            <column name="id" valueNumeric="1"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="exploit real-time e-commerce"/>
+            <column name="image"/>
+            <column name="description" value="Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."/>
+            <column name="price" valueNumeric="4337"/>
+            <column name="discount" valueNumeric="0"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="2"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="utilize real-time interfaces"/>
+            <column name="image"/>
+            <column name="description" value="Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi."/>
+            <column name="price" valueNumeric="3596"/>
+            <column name="discount" valueNumeric="10"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="3"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="extend strategic e-services"/>
+            <column name="image"/>
+            <column name="description" value="Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."/>
+            <column name="price" valueNumeric="15104"/>
+            <column name="discount" valueNumeric="15"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="4"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="iterate integrated solutions"/>
+            <column name="image"/>
+            <column name="description" value="Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus."/>
+            <column name="price" valueNumeric="14140"/>
+            <column name="discount" valueNumeric="5"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="5"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="cultivate magnetic e-commerce"/>
+            <column name="image"/>
+            <column name="description" value="Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl."/>
+            <column name="price" valueNumeric="5444"/>
+            <column name="discount" valueNumeric="12"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="6"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="architect vertical ROI"/>
+            <column name="image"/>
+            <column name="description" value="Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius."/>
+            <column name="price" valueNumeric="10261"/>
+            <column name="discount" valueNumeric="18"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="7"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="disintermediate extensible architectures"/>
+            <column name="image"/>
+            <column name="description" value="Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum."/>
+            <column name="price" valueNumeric="18127"/>
+            <column name="discount" valueNumeric="35"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="8"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="extend leading-edge methodologies"/>
+            <column name="image"/>
+            <column name="description" value="Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis."/>
+            <column name="price" valueNumeric="9796"/>
+            <column name="discount" valueNumeric="40"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="9"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="integrate one-to-one systems"/>
+            <column name="image"/>
+            <column name="description" value="Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."/>
+            <column name="price" valueNumeric="5225"/>
+            <column name="discount" valueNumeric="20"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="10"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="revolutionize 24/7 infrastructures"/>
+            <column name="image"/>
+            <column name="description" value="Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="3369"/>
+            <column name="discount" valueNumeric="50"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="11"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="enhance innovative e-services"/>
+            <column name="image"/>
+            <column name="description" value="Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus."/>
+            <column name="price" valueNumeric="16098"/>
+            <column name="discount" valueNumeric="10"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="12"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="maximize 24/365 e-tailers"/>
+            <column name="image"/>
+            <column name="description" value="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus."/>
+            <column name="price" valueNumeric="3406"/>
+            <column name="discount" valueNumeric="50"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="13"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="scale integrated architectures"/>
+            <column name="image"/>
+            <column name="description" value="Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo."/>
+            <column name="price" valueNumeric="3297"/>
+            <column name="discount" valueNumeric="14"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="14"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="e-enable frictionless web services"/>
+            <column name="image"/>
+            <column name="description" value="Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla."/>
+            <column name="price" valueNumeric="9052"/>
+            <column name="discount" valueNumeric="8"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="15"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="strategize B2B channels"/>
+            <column name="image"/>
+            <column name="description" value="Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."/>
+            <column name="price" valueNumeric="4483"/>
+            <column name="discount" valueNumeric="44"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="16"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="syndicate compelling deliverables"/>
+            <column name="image"/>
+            <column name="description" value="In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."/>
+            <column name="price" valueNumeric="10189"/>
+            <column name="discount" valueNumeric="33"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="17"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="utilize bleeding-edge users"/>
+            <column name="image"/>
+            <column name="description" value="Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."/>
+            <column name="price" valueNumeric="14621"/>
+            <column name="discount" valueNumeric="70"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="18"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="cultivate 24/365 networks"/>
+            <column name="image"/>
+            <column name="description" value="Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="18476"/>
+            <column name="discount" valueNumeric="68"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="19"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="embrace plug-and-play platforms"/>
+            <column name="image"/>
+            <column name="description" value="Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl."/>
+            <column name="price" valueNumeric="7771"/>
+            <column name="discount" valueNumeric="41"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="20"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="target innovative paradigms"/>
+            <column name="image"/>
+            <column name="description" value="Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum."/>
+            <column name="price" valueNumeric="13001"/>
+            <column name="discount" valueNumeric="32"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="21"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="generate open-source e-business"/>
+            <column name="image"/>
+            <column name="description" value="Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo."/>
+            <column name="price" valueNumeric="11325"/>
+            <column name="discount" valueNumeric="20"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="22"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="implement user-centric e-markets"/>
+            <column name="image"/>
+            <column name="description" value="Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus."/>
+            <column name="price" valueNumeric="11531"/>
+            <column name="discount" valueNumeric="15"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="23"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="utilize magnetic supply-chains"/>
+            <column name="image"/>
+            <column name="description" value="Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla."/>
+            <column name="price" valueNumeric="7786"/>
+            <column name="discount" valueNumeric="16"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="24"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="e-enable dot-com supply-chains"/>
+            <column name="image"/>
+            <column name="description" value="Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet."/>
+            <column name="price" valueNumeric="11015"/>
+            <column name="discount" valueNumeric="55"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="25"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-04-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug"/>
+            <column name="title" value="facilitate efficient eyeballs"/>
+            <column name="image"/>
+            <column name="description" value="Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim."/>
+            <column name="price" valueNumeric="13148"/>
+            <column name="discount" valueNumeric="31"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

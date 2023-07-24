@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="changeset_author" id="create-book_ratings">
+        <createTable tableName="book_ratings">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="book_ratings_pkey"/>
+            </column>
+            <column name="book_id" type="INT">
+                <constraints primaryKey="true" primaryKeyName="book_ratings_pkey"/>
+            </column>
+            <column name="user_id" type="INT">
+                <constraints primaryKey="true" primaryKeyName="book_ratings_pkey"/>
+            </column>
+            <column name="rating" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="changeset_author" id="create-fkey-book_ratings-books">
+        <addForeignKeyConstraint baseColumnNames="book_id" baseTableName="book_ratings" constraintName="book_ratings_book_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="books"/>
+    </changeSet>
+    <changeSet author="changeset_author" id="create-fkey-book_ratings-users">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="book_ratings" constraintName="book_ratings_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="users"/>
+    </changeSet>
+</databaseChangeLog>

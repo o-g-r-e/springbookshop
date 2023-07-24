@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="changeset_author" id="insert-books">
+        <insert tableName="books">
+            <column name="id" valueNumeric="1"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-07-20"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ghiy-6345"/>
+            <column name="title" value="Spy Kids"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."/>
+            <column name="price" valueNumeric="21946"/>
+            <column name="discount" valueNumeric="15"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="2"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-10-12"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vdjd-0547"/>
+            <column name="title" value="Burma VJ: Reporting from a Closed Country (Burma VJ: Reporter i et lukket land)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem."/>
+            <column name="price" valueNumeric="10424"/>
+            <column name="discount" valueNumeric="17"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="3"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-01-01"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-allh-4672"/>
+            <column name="title" value="RFK Must Die: The Assassination of Bobby Kennedy"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue."/>
+            <column name="price" valueNumeric="11475"/>
+            <column name="discount" valueNumeric="47"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="4"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-12-21"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-mavc-8463"/>
+            <column name="title" value="Because of Winn-Dixie"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat."/>
+            <column name="price" valueNumeric="2091"/>
+            <column name="discount" valueNumeric="12"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="5"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2022-07-26"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-toyj-3899"/>
+            <column name="title" value="Kummelin jackpot"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus."/>
+            <column name="price" valueNumeric="17675"/>
+            <column name="discount" valueNumeric="7"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="6"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2022-10-27"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-quvg-2783"/>
+            <column name="title" value="Desperation"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat."/>
+            <column name="price" valueNumeric="12134"/>
+            <column name="discount" valueNumeric="31"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="7"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-12-19"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-krph-5210"/>
+            <column name="title" value="Relax... It's Just Sex"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus."/>
+            <column name="price" valueNumeric="2455"/>
+            <column name="discount" valueNumeric="36"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="8"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-06-27"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-iqzp-6151"/>
+            <column name="title" value="Quills"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo."/>
+            <column name="price" valueNumeric="25235"/>
+            <column name="discount" valueNumeric="27"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="9"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-01-28"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-rwct-4470"/>
+            <column name="title" value="My Brother Is an Only Child (Mio fratello è figlio unico)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti."/>
+            <column name="price" valueNumeric="13693"/>
+            <column name="discount" valueNumeric="44"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="10"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-06-04"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-tefv-1920"/>
+            <column name="title" value="I, Madman"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."/>
+            <column name="price" valueNumeric="26562"/>
+            <column name="discount" valueNumeric="22"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="11"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-09-29"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-mdfq-1045"/>
+            <column name="title" value="Istanbul"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum."/>
+            <column name="price" valueNumeric="28621"/>
+            <column name="discount" valueNumeric="41"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="12"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-02-07"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-bbgt-1361"/>
+            <column name="title" value="Man Hunt"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="26920"/>
+            <column name="discount" valueNumeric="50"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="13"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-07-17"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-tnzi-1063"/>
+            <column name="title" value="Extreme Measures"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."/>
+            <column name="price" valueNumeric="5695"/>
+            <column name="discount" valueNumeric="43"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="14"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-06-29"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-khke-4398"/>
+            <column name="title" value="American Dream, An"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="12881"/>
+            <column name="discount" valueNumeric="21"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="15"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-04-08"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-gfps-1714"/>
+            <column name="title" value="Austin Powers: International Man of Mystery"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue."/>
+            <column name="price" valueNumeric="21670"/>
+            <column name="discount" valueNumeric="37"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="16"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-12-09"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-arqj-0622"/>
+            <column name="title" value="Deadline"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."/>
+            <column name="price" valueNumeric="13447"/>
+            <column name="discount" valueNumeric="19"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="17"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2022-11-26"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-mgpb-7940"/>
+            <column name="title" value="Thirty Seconds Over Tokyo"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."/>
+            <column name="price" valueNumeric="13211"/>
+            <column name="discount" valueNumeric="3"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="18"/>
+            <column name="author_id" valueNumeric="10"/>
+            <column name="pub_date" valueDate="2023-02-21"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-mrey-2929"/>
+            <column name="title" value="Movie 43"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus."/>
+            <column name="price" valueNumeric="13140"/>
+            <column name="discount" valueNumeric="34"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="19"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-05-29"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-asss-6205"/>
+            <column name="title" value="Interstellar"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet."/>
+            <column name="price" valueNumeric="12365"/>
+            <column name="discount" valueNumeric="39"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="20"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-08-25"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-aopz-6433"/>
+            <column name="title" value="Ned Kelly"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla."/>
+            <column name="price" valueNumeric="7891"/>
+            <column name="discount" valueNumeric="7"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="21"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-06-06"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-zzfx-0533"/>
+            <column name="title" value="Orgy of the Dead"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."/>
+            <column name="price" valueNumeric="3118"/>
+            <column name="discount" valueNumeric="1"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="22"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2023-02-10"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-qrej-8897"/>
+            <column name="title" value="Lady in the Water"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."/>
+            <column name="price" valueNumeric="9578"/>
+            <column name="discount" valueNumeric="28"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="23"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-11-05"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-oiyj-2147"/>
+            <column name="title" value="Now and Then"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc."/>
+            <column name="price" valueNumeric="15150"/>
+            <column name="discount" valueNumeric="46"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="24"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-12-06"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-nldr-2325"/>
+            <column name="title" value="White Irish Drinkers"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis."/>
+            <column name="price" valueNumeric="28479"/>
+            <column name="discount" valueNumeric="48"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="25"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2022-05-02"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-faxy-0239"/>
+            <column name="title" value="Unborn in the USA: Inside the War on Abortion"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."/>
+            <column name="price" valueNumeric="4600"/>
+            <column name="discount" valueNumeric="8"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="26"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-01-15"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vxbh-5179"/>
+            <column name="title" value="Mission, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus."/>
+            <column name="price" valueNumeric="10258"/>
+            <column name="discount" valueNumeric="17"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="27"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-06-22"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-olrn-5679"/>
+            <column name="title" value="Macario"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat."/>
+            <column name="price" valueNumeric="2416"/>
+            <column name="discount" valueNumeric="30"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="28"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-09-15"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-dvrx-9706"/>
+            <column name="title" value="Stormy Monday"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est."/>
+            <column name="price" valueNumeric="6744"/>
+            <column name="discount" valueNumeric="45"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="29"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-09-02"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-xreg-3102"/>
+            <column name="title" value="Kentuckian, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis."/>
+            <column name="price" valueNumeric="4227"/>
+            <column name="discount" valueNumeric="37"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="30"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-05-20"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-nzdy-2907"/>
+            <column name="title" value="Lawnmower Man 2: Beyond Cyberspace"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo."/>
+            <column name="price" valueNumeric="29186"/>
+            <column name="discount" valueNumeric="25"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="31"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-08-20"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ssbr-4939"/>
+            <column name="title" value="Afternoon Delight"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh."/>
+            <column name="price" valueNumeric="19864"/>
+            <column name="discount" valueNumeric="0"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="32"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-06-15"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-rtss-3941"/>
+            <column name="title" value="Curve, The (Dead Man's Curve)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."/>
+            <column name="price" valueNumeric="14962"/>
+            <column name="discount" valueNumeric="6"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="33"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-07-29"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-aeit-5984"/>
+            <column name="title" value="Black Sea"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede."/>
+            <column name="price" valueNumeric="28044"/>
+            <column name="discount" valueNumeric="49"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="34"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-07-07"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-hequ-9580"/>
+            <column name="title" value="Machine, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui."/>
+            <column name="price" valueNumeric="23425"/>
+            <column name="discount" valueNumeric="27"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="35"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-10-16"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-svgs-0957"/>
+            <column name="title" value="Give My Regards to Broad Street"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam."/>
+            <column name="price" valueNumeric="18491"/>
+            <column name="discount" valueNumeric="36"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="36"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-08-23"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-gtji-3665"/>
+            <column name="title" value="Summer at Grandpa's, A (Dong dong de jia qi)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit."/>
+            <column name="price" valueNumeric="20467"/>
+            <column name="discount" valueNumeric="34"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="37"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2023-03-02"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-ecnk-3303"/>
+            <column name="title" value="Bread and Alley (Nan va Koutcheh)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."/>
+            <column name="price" valueNumeric="23729"/>
+            <column name="discount" valueNumeric="21"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="38"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-02-21"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-lkex-5139"/>
+            <column name="title" value="Dazed and Confused"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo."/>
+            <column name="price" valueNumeric="6861"/>
+            <column name="discount" valueNumeric="39"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="39"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2022-11-24"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-ukry-2990"/>
+            <column name="title" value="Marketa Lazarová"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero."/>
+            <column name="price" valueNumeric="29288"/>
+            <column name="discount" valueNumeric="41"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="40"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-11-22"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-pnqd-8992"/>
+            <column name="title" value="Tomorrow at Dawn (Demain dès l'aube)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="26667"/>
+            <column name="discount" valueNumeric="3"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="41"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-03-30"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-aved-5957"/>
+            <column name="title" value="Stoker"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="29392"/>
+            <column name="discount" valueNumeric="35"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="42"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-05-30"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-wuoq-7638"/>
+            <column name="title" value="I Remember (Eu Me Lembro)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo."/>
+            <column name="price" valueNumeric="14201"/>
+            <column name="discount" valueNumeric="26"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="43"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-04-25"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-qvtw-7118"/>
+            <column name="title" value="[REC] 4: Apocalypse"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."/>
+            <column name="price" valueNumeric="5008"/>
+            <column name="discount" valueNumeric="36"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="44"/>
+            <column name="author_id" valueNumeric="10"/>
+            <column name="pub_date" valueDate="2022-10-05"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-npmq-0536"/>
+            <column name="title" value="Redacted"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."/>
+            <column name="price" valueNumeric="9088"/>
+            <column name="discount" valueNumeric="7"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="45"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-03-30"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-uiqd-3805"/>
+            <column name="title" value="Primal"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede."/>
+            <column name="price" valueNumeric="15091"/>
+            <column name="discount" valueNumeric="2"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="46"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-02-05"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-bedf-6809"/>
+            <column name="title" value="All Dogs Go to Heaven"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."/>
+            <column name="price" valueNumeric="6949"/>
+            <column name="discount" valueNumeric="7"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="47"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-07-23"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-xwys-0992"/>
+            <column name="title" value="Smashed"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."/>
+            <column name="price" valueNumeric="8257"/>
+            <column name="discount" valueNumeric="39"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="48"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2023-03-19"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-hqzf-1981"/>
+            <column name="title" value="What Women Want"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo."/>
+            <column name="price" valueNumeric="29066"/>
+            <column name="discount" valueNumeric="39"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="49"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2022-12-10"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vpcw-6750"/>
+            <column name="title" value="Herman's House"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo."/>
+            <column name="price" valueNumeric="19835"/>
+            <column name="discount" valueNumeric="21"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="50"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-05-23"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ofhj-4635"/>
+            <column name="title" value="Cry, the Beloved Country"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."/>
+            <column name="price" valueNumeric="1513"/>
+            <column name="discount" valueNumeric="34"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="51"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2023-03-18"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-mmxl-2620"/>
+            <column name="title" value="Saratov Approach, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."/>
+            <column name="price" valueNumeric="8824"/>
+            <column name="discount" valueNumeric="13"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="52"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-04-23"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-soni-8940"/>
+            <column name="title" value="In the Shadow of the Machine"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="8905"/>
+            <column name="discount" valueNumeric="29"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="53"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-07-12"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-qqyq-7043"/>
+            <column name="title" value="Law, The (a.k.a. Where the Hot Wind Blows!) (Legge, La)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet."/>
+            <column name="price" valueNumeric="19055"/>
+            <column name="discount" valueNumeric="13"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="54"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-08-14"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-qsuf-2785"/>
+            <column name="title" value="Regeneration"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue."/>
+            <column name="price" valueNumeric="19958"/>
+            <column name="discount" valueNumeric="29"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="55"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-02-02"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vdop-4393"/>
+            <column name="title" value="Icon"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum."/>
+            <column name="price" valueNumeric="29123"/>
+            <column name="discount" valueNumeric="19"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="56"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-10-19"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-diuo-7345"/>
+            <column name="title" value="Wild One, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus."/>
+            <column name="price" valueNumeric="13316"/>
+            <column name="discount" valueNumeric="1"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="57"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-12-01"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-izwp-7543"/>
+            <column name="title" value="Red Planet"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor."/>
+            <column name="price" valueNumeric="4543"/>
+            <column name="discount" valueNumeric="13"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="58"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-05-23"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-adfq-5474"/>
+            <column name="title" value="Love and Pigeons"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."/>
+            <column name="price" valueNumeric="9626"/>
+            <column name="discount" valueNumeric="0"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="59"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-09-20"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-bygr-5207"/>
+            <column name="title" value="Face to Face (Faccia a faccia)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus."/>
+            <column name="price" valueNumeric="6752"/>
+            <column name="discount" valueNumeric="48"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="60"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2023-01-04"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ahjv-9508"/>
+            <column name="title" value="Deficit (Déficit)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis."/>
+            <column name="price" valueNumeric="23678"/>
+            <column name="discount" valueNumeric="33"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="61"/>
+            <column name="author_id" valueNumeric="5"/>
+            <column name="pub_date" valueDate="2022-10-10"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-qfnz-7755"/>
+            <column name="title" value="Quod erat demonstrandum"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."/>
+            <column name="price" valueNumeric="24513"/>
+            <column name="discount" valueNumeric="12"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="62"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-07-07"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-ykhv-8023"/>
+            <column name="title" value="Hanky Panky"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue."/>
+            <column name="price" valueNumeric="2351"/>
+            <column name="discount" valueNumeric="45"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="63"/>
+            <column name="author_id" valueNumeric="10"/>
+            <column name="pub_date" valueDate="2023-03-07"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-uncq-0755"/>
+            <column name="title" value="Legends of Oz: Dorothy's Return"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor."/>
+            <column name="price" valueNumeric="1381"/>
+            <column name="discount" valueNumeric="9"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="64"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-03-09"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-xvsu-0480"/>
+            <column name="title" value="Booker's Place: A Mississippi Story"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."/>
+            <column name="price" valueNumeric="12694"/>
+            <column name="discount" valueNumeric="0"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="65"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-04-27"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-lckn-9528"/>
+            <column name="title" value="No"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."/>
+            <column name="price" valueNumeric="1355"/>
+            <column name="discount" valueNumeric="25"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="66"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-01-26"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-iasy-7036"/>
+            <column name="title" value="Heaven &amp; Earth"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl."/>
+            <column name="price" valueNumeric="14145"/>
+            <column name="discount" valueNumeric="46"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="67"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-12-10"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-ljsc-5366"/>
+            <column name="title" value="7th Voyage of Sinbad, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis."/>
+            <column name="price" valueNumeric="3071"/>
+            <column name="discount" valueNumeric="34"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="68"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-02-03"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-kvpb-9028"/>
+            <column name="title" value="Point Blank"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst."/>
+            <column name="price" valueNumeric="8976"/>
+            <column name="discount" valueNumeric="16"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="69"/>
+            <column name="author_id" valueNumeric="10"/>
+            <column name="pub_date" valueDate="2022-04-20"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-orio-6195"/>
+            <column name="title" value="Delusion"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."/>
+            <column name="price" valueNumeric="14449"/>
+            <column name="discount" valueNumeric="38"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="70"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-01-30"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-enob-7472"/>
+            <column name="title" value="Old Joy"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla."/>
+            <column name="price" valueNumeric="15255"/>
+            <column name="discount" valueNumeric="6"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="71"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-06-30"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-xzab-2198"/>
+            <column name="title" value="Vampire Academy"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros."/>
+            <column name="price" valueNumeric="22167"/>
+            <column name="discount" valueNumeric="4"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="72"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2023-02-18"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-quib-0834"/>
+            <column name="title" value="Into the Wild"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus."/>
+            <column name="price" valueNumeric="14073"/>
+            <column name="discount" valueNumeric="42"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="73"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-04-28"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-fzow-2804"/>
+            <column name="title" value="The Visitor"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."/>
+            <column name="price" valueNumeric="17648"/>
+            <column name="discount" valueNumeric="20"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="74"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-02-19"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vejy-8036"/>
+            <column name="title" value="Man with the Iron Fists, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros."/>
+            <column name="price" valueNumeric="4225"/>
+            <column name="discount" valueNumeric="38"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="75"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-05-09"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-unex-4549"/>
+            <column name="title" value="Tyler Perry's Diary of a Mad Black Woman"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti."/>
+            <column name="price" valueNumeric="13771"/>
+            <column name="discount" valueNumeric="39"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="76"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-07-04"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-broj-3641"/>
+            <column name="title" value="Zombies on Broadway"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo."/>
+            <column name="price" valueNumeric="12594"/>
+            <column name="discount" valueNumeric="45"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="77"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2022-05-14"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-hjsa-5214"/>
+            <column name="title" value="Vamp"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante."/>
+            <column name="price" valueNumeric="26926"/>
+            <column name="discount" valueNumeric="49"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="78"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2023-01-30"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-xmyh-0466"/>
+            <column name="title" value="Kingdom of Heaven"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti."/>
+            <column name="price" valueNumeric="1002"/>
+            <column name="discount" valueNumeric="19"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="79"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-04-12"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-jzul-9490"/>
+            <column name="title" value="White Angel, The (L'angelo bianco)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."/>
+            <column name="price" valueNumeric="3649"/>
+            <column name="discount" valueNumeric="11"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="80"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2022-11-26"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ekmx-3332"/>
+            <column name="title" value="Tall in the Saddle"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh."/>
+            <column name="price" valueNumeric="22944"/>
+            <column name="discount" valueNumeric="3"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="81"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-04-26"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-vykt-9994"/>
+            <column name="title" value="Rebound"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."/>
+            <column name="price" valueNumeric="14571"/>
+            <column name="discount" valueNumeric="4"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="82"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-08-01"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-hvfv-9250"/>
+            <column name="title" value="Everything About Mustafa (Mustafa hakkinda hersey)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula."/>
+            <column name="price" valueNumeric="29971"/>
+            <column name="discount" valueNumeric="48"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="83"/>
+            <column name="author_id" valueNumeric="10"/>
+            <column name="pub_date" valueDate="2022-11-30"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-ggar-6739"/>
+            <column name="title" value="DNA"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis."/>
+            <column name="price" valueNumeric="15572"/>
+            <column name="discount" valueNumeric="15"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="84"/>
+            <column name="author_id" valueNumeric="6"/>
+            <column name="pub_date" valueDate="2022-09-02"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-lehu-9840"/>
+            <column name="title" value="Down with Love"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."/>
+            <column name="price" valueNumeric="28709"/>
+            <column name="discount" valueNumeric="0"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="85"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-09-12"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-nths-7650"/>
+            <column name="title" value="Bobby"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus."/>
+            <column name="price" valueNumeric="24312"/>
+            <column name="discount" valueNumeric="44"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="86"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-05-28"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-biba-5620"/>
+            <column name="title" value="Paycheck"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede."/>
+            <column name="price" valueNumeric="21380"/>
+            <column name="discount" valueNumeric="6"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="87"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2023-02-09"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-sjir-2283"/>
+            <column name="title" value="Accused (Anklaget)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo."/>
+            <column name="price" valueNumeric="26897"/>
+            <column name="discount" valueNumeric="41"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="88"/>
+            <column name="author_id" valueNumeric="8"/>
+            <column name="pub_date" valueDate="2022-04-17"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ownm-0703"/>
+            <column name="title" value="Breakout"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem."/>
+            <column name="price" valueNumeric="23515"/>
+            <column name="discount" valueNumeric="36"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="89"/>
+            <column name="author_id" valueNumeric="7"/>
+            <column name="pub_date" valueDate="2023-01-11"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-dhwv-3770"/>
+            <column name="title" value="Marooned"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."/>
+            <column name="price" valueNumeric="25687"/>
+            <column name="discount" valueNumeric="30"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="90"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-09-17"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-tnge-8674"/>
+            <column name="title" value="Love Wrecked"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum."/>
+            <column name="price" valueNumeric="26715"/>
+            <column name="discount" valueNumeric="28"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="91"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-08-01"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-bctu-6213"/>
+            <column name="title" value="Joan Rivers: A Piece of Work"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis."/>
+            <column name="price" valueNumeric="26431"/>
+            <column name="discount" valueNumeric="9"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="92"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2023-01-07"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-xuhj-8391"/>
+            <column name="title" value="Velvet Goldmine"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."/>
+            <column name="price" valueNumeric="9627"/>
+            <column name="discount" valueNumeric="9"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="93"/>
+            <column name="author_id" valueNumeric="3"/>
+            <column name="pub_date" valueDate="2022-04-17"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-ogbv-1877"/>
+            <column name="title" value="JFK: The Smoking Gun"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci."/>
+            <column name="price" valueNumeric="3321"/>
+            <column name="discount" valueNumeric="17"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="94"/>
+            <column name="author_id" valueNumeric="9"/>
+            <column name="pub_date" valueDate="2022-08-17"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-kpdw-7206"/>
+            <column name="title" value="Proposal, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/cc0000/ffffff"/>
+            <column name="description" value="Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis."/>
+            <column name="price" valueNumeric="18620"/>
+            <column name="discount" valueNumeric="32"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="95"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-04-12"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-hwxu-3830"/>
+            <column name="title" value="The Land Before Time X: The Great Longneck Migration"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam."/>
+            <column name="price" valueNumeric="28640"/>
+            <column name="discount" valueNumeric="13"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="96"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-12-18"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-hnsy-9427"/>
+            <column name="title" value="Demon in My View, A (Der Mann nebenan)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."/>
+            <column name="price" valueNumeric="19568"/>
+            <column name="discount" valueNumeric="32"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="97"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2022-09-04"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-txgh-2420"/>
+            <column name="title" value="Doghouse"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/ff4444/ffffff"/>
+            <column name="description" value="Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui."/>
+            <column name="price" valueNumeric="14797"/>
+            <column name="discount" valueNumeric="25"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="98"/>
+            <column name="author_id" valueNumeric="2"/>
+            <column name="pub_date" valueDate="2023-02-05"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-vhjj-7732"/>
+            <column name="title" value="Playing God"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."/>
+            <column name="price" valueNumeric="21875"/>
+            <column name="discount" valueNumeric="35"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="99"/>
+            <column name="author_id" valueNumeric="4"/>
+            <column name="pub_date" valueDate="2022-05-18"/>
+            <column name="is_bestseller" valueNumeric="0"/>
+            <column name="slug" value="book-pgih-2887"/>
+            <column name="title" value="Spy Next Door, The"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/5fa2dd/ffffff"/>
+            <column name="description" value="Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis."/>
+            <column name="price" valueNumeric="16846"/>
+            <column name="discount" valueNumeric="17"/>
+        </insert>
+        <insert tableName="books">
+            <column name="id" valueNumeric="100"/>
+            <column name="author_id" valueNumeric="1"/>
+            <column name="pub_date" valueDate="2023-03-25"/>
+            <column name="is_bestseller" valueNumeric="1"/>
+            <column name="slug" value="book-bbhn-9709"/>
+            <column name="title" value="Last Days of Pompeii, The (Gli ultimi giorni di Pompeii)"/>
+            <column name="image" value="http://dummyimage.com/168x264.png/dddddd/000000"/>
+            <column name="description" value="Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci."/>
+            <column name="price" valueNumeric="28176"/>
+            <column name="discount" valueNumeric="18"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

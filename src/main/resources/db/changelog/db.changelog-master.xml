@@ -1,0 +1,65 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="db/changelog/liquibase-changeLog-create-authors.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-books.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-authors.xml"/>
+    <include file="db/changelog/liquibase-changeLog-insert-books.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-book_file.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-book2user_type.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-users.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-book2user.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-users.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2user_type.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2user.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-tags.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-book2tag.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-tags.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2tag.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-genres.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-book2genre.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-genres.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2genre.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-truncate-authors.sql"/>
+    <include file="db/changelog/liquibase-changeLog-truncate-tags.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-more-authors.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-more-books1.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-more-books2.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-more-book2user.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-more-book2genre.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-uniq-tags.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2tag_0-1.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2tag_1-2.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book2tag_3-4.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-book_file_type.xml"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book_file_type.sql"/>
+    <include file="db/changelog/liquibase-changeLog-add-col-book_id-to-book_file.xml"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book_file.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-book_ratings.xml"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book_ratings.sql"/>
+
+    <include file="db/changelog/liquibase-changeLog-create-book_review.xml"/>
+    <include file="db/changelog/liquibase-changeLog-create-book_review_like.xml"/>
+
+    <include file="db/changelog/liquibase-changeLog-insert-book_review.sql"/>
+    <include file="db/changelog/liquibase-changeLog-insert-book_review_like.sql"/>
+    <include file="db/changelog/liquibase-changeLog-add-col-to-users.xml"/>
+
+</databaseChangeLog>
